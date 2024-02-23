@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 
+import sys
+
 str1 = "Welcome to "
 str2 = "Holberton School!"
-print(str1 + str2, end="")
+
+sys.stdout.write(str1 + str2 + '\n')
