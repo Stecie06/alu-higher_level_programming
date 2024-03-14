@@ -1,17 +1,13 @@
 #!/usr/bin/python3
+"""Defines class Mylists that inherits from list"""
+
 
 class MyList(list):
-    def print_sorted(self):
-        sorted_list = sorted(self)
-        print(sorted_list)
+    """Inheritance form superclass"""
+    def __init__(self):
+        """initialisation of object"""
+        super().__init__()
 
-if __name__ == "__main__":
-    my_list = MyList()
-    my_list.append(1)
-    my_list.append(4)
-    my_list.append(2)
-    my_list.append(3)
-    my_list.append(5)
-    print(my_list)
-    my_list.print_sorted()
-    print(my_list)
+    def print_sorted(self):
+        """prints sorted list"""
+        print(sorted(self))
